@@ -1,4 +1,4 @@
-# .bash_profile fragment that fulfills environment.md's promises.
+# .bash_profile fragment that loads the system environment.
 
 # Rust via cargo.rs.
 if [ -d "$HOME/.cargo" ]; then

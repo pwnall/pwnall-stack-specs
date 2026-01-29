@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Fulfills environment.md's promises.
+#
 
 set -e  # Exit on errors.
 set -u  # Exit on undefined variables.
@@ -11,11 +11,6 @@ if command -v apt >/dev/null 2>&1; then
 
   # Homebrew dependencies. Also generally good for building.
   sudo apt install -y build-essential curl file git procps
-
-  # Android AOSP dependencies
-  sudo apt install -y bison flex fontconfig gnupg \
-      libc6-dev-i386 libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils \
-      x11proto-core-dev xsltproc unzip zip zlib1g-dev
 fi
 
 # Homebrew for Linux.
