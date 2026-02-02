@@ -1,0 +1,30 @@
+[project]
+name = "project-name"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "mypy",
+  "pytest",
+  "ruff",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+pythonpath = "src"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
