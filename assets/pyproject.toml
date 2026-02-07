@@ -25,6 +25,10 @@ indent-width = 4
 
 [tool.ruff.lint]
 select = ["ALL"]
+ignore = ["COM812"]  # Conflicts with the formatter.
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]  # assert is idiomatic in Pytest.
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
