@@ -9,7 +9,13 @@ Python code uses the following conventions
   except
     * Google-style docstrings
 * [mypy](https://mypy.readthedocs.io/) strict mode for static type checking
-* [pytest](https://docs.pytest.org/) unit tests
+* [pytest](https://docs.pytest.org/) for unit tests
+
+Names that are not part of a public interface are prefixed with an underscore.
+This applies to
+* file names in directories with an `__init__.py` file
+* class and function names in a module
+* function and subclass names in a class
 
 Common commands:
 
