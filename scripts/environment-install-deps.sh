@@ -63,4 +63,4 @@ if [ -d "$HOME/.nvm" ]; then
 fi
 
 # Node.js
-nvm install stable
+nvm install --lts
