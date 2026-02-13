@@ -12,6 +12,7 @@ Ensure the project environment and code comply with the following standards.
 * [Python / uv](references/environment-python.md)
 * [Node.js / nvm](references/environment-node.md)
 * [Homebrew](references/environment-homebrew.md)
+* [Git](references/environment-git.md)
 
 ## Domain Specifications
 
