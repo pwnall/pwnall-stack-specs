@@ -10,6 +10,7 @@ Python code uses the following conventions
     * Google-style docstrings
 * [mypy](https://mypy.readthedocs.io/) strict mode for static type checking
 * [pytest](https://docs.pytest.org/) for unit tests
+* [pytest-cov](https://pytest-cov.readthedocs.io/) for test coverage reporting
 
 Names that are not part of a public interface are prefixed with an underscore.
 This applies to
@@ -25,12 +26,21 @@ Common commands:
 * Show lint errors for a file or directory: `uv run ruff check file_or_path`
 * Check static types for a file or directory: `uv run mypy file_or_path`
 * Run tests: `uv run pytest`
+* Produce JSON coverage report: `uv run pytest --cov-report=json:.coverage.json`
+* Produce HTML coverage report: `uv run pytest --cov-report=html:.coverage-html`
+* Serve the HTML coverage report:
+  `uv run python -m http.server --bind 127.0.0.1 --directory .coverage-html/`
 
 Repository integration:
 
+* `.coverage` - Python test coverage database
+* `.coverage.json` - JSON-formatted test coverage (software-friendly)
+* `.coverage-html/` - HTML-formatted test coverage (human-friendly)
+* `.mypy_cache/`, `.pytest_cache/`, `.ruff_cache/` - Python tool caches
 * `.venv/` - Python virtual environment managed by uv
 * `.python-version` - Python interpreter used by the virtual environment
-* `pyproject.toml` - Python project configuration for uv
+* `dist/` - Python packaging tool output
+* `pyproject.toml` - Python project configuration for all the tools listed here
 * `uv.lock` - Python packages used by the project
 
 New projects use a [pyproject.toml template](assets/pyproject.toml) that
