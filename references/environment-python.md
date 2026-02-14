@@ -40,8 +40,6 @@ Repository integration:
 * `.venv/` - Python virtual environment managed by uv
 * `.python-version` - Python interpreter used by the virtual environment
 * `dist/` - Python packaging tool output
-* `pyproject.toml` - Python project configuration for all the tools listed here
+* `pyproject.toml` - Python project configuration for all the tools listed here;
+  [new project pyproject.toml template](assets/pyproject.toml)
 * `uv.lock` - Python packages used by the project
-
-New projects use a [pyproject.toml template](assets/pyproject.toml) that
-configures these tools.

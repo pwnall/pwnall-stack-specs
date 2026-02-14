@@ -30,6 +30,13 @@ Consult these guides when working in specific technical areas:
     * [Image manipulation](references/image-manipulation.md)
     * [JupyterLab notebooks](references/jupyter.md)
 
+# New Project Setup
+
+Use the following templates if the corresponding files are missing.
+
+* [.gitignore](assets/.gitignore)
+* [pyproject.toml](assets/pyproject.toml)
+
 # Environment Setup
 
 If the core technologies below are missing, offer to run the following scripts.
