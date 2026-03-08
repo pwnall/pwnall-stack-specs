@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#
-
 set -e  # Exit on errors.
 set -u  # Exit on undefined variables.
 

@@ -119,7 +119,7 @@ Examples:
 * Bad: Never use emoticons.
 * Good: Do not use emoticons. Always use Unicode code points for emojis.
 
-#### Groudedness
+#### Groundedness
 
 Replace the following with operational instructions.
 

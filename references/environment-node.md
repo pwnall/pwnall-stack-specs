@@ -9,7 +9,7 @@ Common commands:
 * Run a script in `package.json`, such as `dev`: `npm run dev`
 * Run a command, such as `install`, from an npm package, such as
   `@puppeteer/browsers`: `npx @puppeteer/browsers install`
-* Add a npm dependency, such as `puppeteer`: `npm install puppeteer`
+* Add an npm dependency, such as `puppeteer`: `npm install puppeteer`
 
 Repository integration:
 

@@ -4,7 +4,6 @@ The vector database is a self-hosted [Qdrant](https://github.com/qdrant/qdrant)
 instance accessed via
 [the Qdrant Python client](https://github.com/qdrant/qdrant-client).
 
-
 Embeddings are computed using
 [sentence-transformers](https://github.com/huggingface/sentence-transformers).
 

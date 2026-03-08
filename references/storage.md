@@ -1,6 +1,6 @@
 ## Storage
 
-Most data is stored in [PostgreSQL](https://www.postgresql.org/docs/).  The
+Most data is stored in [PostgreSQL](https://www.postgresql.org/docs/). The
 relational database is accessed using
 [SQLModel](https://sqlmodel.tiangolo.com/tutorial/) on top of
 [SQLAlchemy](https://docs.sqlalchemy.org/) and

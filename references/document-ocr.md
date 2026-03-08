@@ -3,8 +3,8 @@
 Models are served using [vLLM](https://docs.vllm.ai/) and
 [SGLang](https://github.com/sgl-project/sglang).
 
-The baseline OCR is supplied by the
-[pytesseract](https://pypi.org/project/pytesseract/), which wraps the
+The baseline OCR is supplied by
+[pytesseract](https://pypi.org/project/pytesseract/), which wraps
 [the Tesseract library](https://github.com/tesseract-ocr/tesseract).
 
 The deep learning OCR is supplied by

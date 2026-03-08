@@ -44,7 +44,10 @@ select = ["ALL"]
 ignore = ["COM812"]  # Conflicts with the formatter.
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**" = ["S101"]  # assert is idiomatic in Pytest.
+"tests/**" = [
+  "PLR2004",  # Tests use constants (DAMP vs DRY).
+  "S101",  # assert is idiomatic in Pytest.
+]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
